@@ -4,7 +4,6 @@ import Button from "./components/Button";
 import Fruit from "./Fruit";
 
 function App() {
-  const [count, setCount] = useState(0);
   const [fruits] = useState(["Manzana", "Banana", "Naranja", "Fresa"]);
 
   return (
@@ -15,8 +14,6 @@ function App() {
         {fruits.map((fruit) => (
           <Fruit key={fruit} name={fruit} />
         ))}
-        <p>Has hecho clic {count} {count === 1 ? "vez" : "veces"}</p>
-        <Button label="¡Hazme clic!" onClick={() => setCount(count + 1)} />
       </header>
     </div>
   );
