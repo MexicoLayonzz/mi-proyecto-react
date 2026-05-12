@@ -1,0 +1,121 @@
+.container {
+	max-width: 560px;
+	margin: 32px auto;
+	padding: 24px;
+	background-color: #1b1f24;
+	border: 1px solid #2c333b;
+	border-radius: 10px;
+	color: #e6edf3;
+}
+
+.container h2 {
+	margin: 0 0 20px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #f2f6fa;
+}
+
+.registro-form {
+	display: grid;
+	gap: 16px;
+}
+
+.form-group {
+	display: grid;
+	gap: 6px;
+}
+
+.form-group label {
+	font-size: 0.95rem;
+	font-weight: 500;
+}
+
+.form-group input {
+	width: 100%;
+	padding: 10px 12px;
+	border: 1px solid #3a434d;
+	border-radius: 8px;
+	background-color: #11161c;
+	color: #e6edf3;
+	font-size: 0.95rem;
+	box-sizing: border-box;
+}
+
+.form-group input:focus {
+	outline: none;
+	border-color: #6b8fb0;
+	box-shadow: 0 0 0 3px rgba(107, 143, 176, 0.2);
+}
+
+.error-text {
+	margin: 0;
+	color: #ff9b9b;
+	font-size: 0.85rem;
+}
+
+.actions {
+	display: flex;
+	gap: 12px;
+	margin-top: 8px;
+}
+
+.actions button {
+	padding: 10px 16px;
+	border-radius: 8px;
+	border: 1px solid #3a434d;
+	font-size: 0.95rem;
+	cursor: pointer;
+}
+
+.secondary-button {
+	background-color: #242b33;
+	color: #e6edf3;
+}
+
+.primary-button {
+	background-color: #3f6b8a;
+	color: #ffffff;
+	border-color: #3f6b8a;
+}
+
+.status-message {
+	margin-top: 18px;
+	padding: 12px;
+	background-color: #1f2b23;
+	border: 1px solid #355443;
+	border-radius: 8px;
+}
+
+.status-panel {
+	margin-top: 16px;
+	padding: 16px;
+	background-color: #11161c;
+	border: 1px solid #2c333b;
+	border-radius: 8px;
+}
+
+.status-line,
+.status-label {
+	margin: 0 0 10px;
+}
+
+.status-panel pre {
+	margin: 0 0 14px;
+	padding: 12px;
+	background-color: #0b1015;
+	border-radius: 8px;
+	overflow-x: auto;
+	font-size: 0.88rem;
+	color: #c9d1d9;
+}
+
+@media (max-width: 640px) {
+	.container {
+		margin: 16px;
+		padding: 18px;
+	}
+
+	.actions {
+		flex-direction: column;
+	}
+}
